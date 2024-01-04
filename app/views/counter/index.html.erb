@@ -1,0 +1,5 @@
+<H1>This is the click counter App!! keep clicking.....</H1>
+
+<%= pluralize(CounterController.class_variable_get(:@@clicks), 'click') %>
+
+<%= button_to "Click Me", root_path, method: :get, params: {clicked: true} %>
